@@ -49,11 +49,33 @@ function yordam(pageName){
     <h1 style = 'text-align: center;'>
     Murojaatingizni yozib qoldiring...
     </h2>
-    <input type="text" style = "
+    <input type="text" id = 'matn' style = " 
     display: block;
     margin-left: auto;
     margin-right: auto;
-    widht: calc(100%/2);
-    "> 
-    `;
+    widht: calc(100%/2); "><br> 
+    <input type="button" value="Yuborish" onclick="msaqlandi()">`;
+    
+    function msaqlandi(){
+        var matn = document.getElementById('matn').value;
+        var yoz = new XMLHttpRequest();
+        yoz.open("POST", "./murojaat.txt", true);
+        yoz.onreadystatechange = function(){
+            if (this.readyState == 1 && yoz.status === 200){
+                alert('Murojaat yozib qoldirildi!');
+            }
+            };
+            yoz.send(matn);
+        }    
 }
+// function msaqlandi(){
+//     var matn = document.getElementById('matn').value;
+//     var yoz = new XMLHttpRequest();
+//     yoz.open("POST", "muloqot.txt", true);
+//     yoz.onreadystatechange = function(){
+//         if (this.readyState == 4 && yoz.status === 200){
+//             alert('Murojaat yozib qoldirildi!');
+//         }
+//         };
+//         yoz.send(matn);
+//     }
