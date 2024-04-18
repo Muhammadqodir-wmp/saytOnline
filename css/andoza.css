@@ -71,27 +71,27 @@ body{
     width: 200px;
     height: 100px;
 }
-@media screen and (max-width: 320px), and {
-    body{
+@media screen and (max-width: 1080px) and (max-height: 2400px) {
+    body {
         width: auto;
         height: auto;
-        font-size: 8PX;
+        font-size: 8px;
     }
-    #menu{
+    #menu {
         width: 10%;
         height: 4%;
         border: none;   
     }
-    #logo{
+    #logo {
         display: none;
     }
-    #menu .bos{
+    #menu .bos {
         width: 10%;
-        height:  4%;
+        height: 4%;
         font-size: 8px;
         border: none;
     }
-    .bosh{
+    .bosh {
         font-size: 8px;
         border: none;
     }
@@ -100,29 +100,28 @@ body{
         height: 10%;
         font-size: 8px;
         float: right;
-        padding: 20px;  ;
-        padding-right:10%;
+        padding: 20px;  
+        padding-right: 10%;
         padding-left: 10%;
         margin: auto;
     }
-    h1{
+    h1 {
         font-size: 8px;
     }
-    p{
+    p {
         font-size: 8px;
     }
-    #news{
-
+    #news {
         width: auto;
         height: auto;
         padding-left: 10%;
     }
-    #f{
+    #f {
         width: auto;
         height: auto;
         padding-left: 10%;
     }
-    audio{
+    audio {
         width: 100px;
         height: 20px;
         padding-right: 50%;
