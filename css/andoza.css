@@ -65,13 +65,14 @@ body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+
  .bos{
     background-color: rgba(0, 0, 255, 0.5);
     /* border: 2px solid rgb(0, 174, 255); */
     width: 200px;
-    height: 100px;
-}
-@media screen and (max-width: 1080px) and (max-height: 2400px) {
+    height: 100px;}
+
+@media screen and (max-width: 420px) {
     body {
         width: auto;
         height: auto;
