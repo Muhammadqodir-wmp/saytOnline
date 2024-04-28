@@ -213,3 +213,73 @@ section {
     color: var(--light-color);
     font-size: 1.6rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media so'rovlari */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    #search-btn{
+        display: inline-block;
+    }
+    .header .flex .search-form{
+        position: absolute;
+        top:99%; left: 0; right: 0;
+        width: auto;
+        border-top: var(--border);
+        background-color: var(--white);
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+    }
+    .header .flex .search-form.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+@media(max-width:450px){
+    html{
+        font-size: 55%;
+    }
+    
+}
