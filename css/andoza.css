@@ -1,140 +1,130 @@
 @keyframes birinchi {
-    from {border: 3px solid rgb(255, 0, 0)}
-    to {border: 1.5px solid greenyellow}
+    from {border: 3px solid rgb(255, 0, 0);}
+    to {border: 1.5px solid greenyellow;}
 }
+
+body {
+    background-image: url('../rasmlar/efon.jpg');
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
 #logo {
     height: 100px;
     border: 2px solid green;
-    /* background-color: rgb(0, 17, 255); */
-    font-family: 'Poppins', sans-serif;
     font-size: 80px;
     text-align: center;
     color: rgb(11, 224, 22);
     font-weight: bold;
-    margin-bottom: 2px;
-    /* animation-name: birinchi;
-    animation-iteration-count: infinite;
-    animation-duration: 1s; */
-    }
-#menu {
-    width: 200px;
-    float: left;
-    border: 2px solid blue;
-    font-size:12px;
-    margin: 2px;
-    color: aliceblue; 
-    padding-left: 2px;
+    margin-bottom: 20px;
 }
+
+#menu, #news {
+    width: 200px;
+    border: 2px solid blue;
+    font-size: 12px;
+    margin: 10px;
+    color: aliceblue; 
+    padding: 10px;
+}
+
+#menu {
+    float: left;
+}
+
+#news {
+    float: right;
+    border-color: springgreen;
+}
+
 #content {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid aquamarine;
-    width: calc(100% - 420px);
-    float:left;
-    margin-bottom: 2px;
-    color: aliceblue; 
-    
-    }
-#news {
-    width: 200px;
-    float: right;
-    border: 2px solid springgreen ; 
-    color: aliceblue; 
+    width: calc(100% - 500px);
+    float: left;
+    margin-bottom: 20px;
 }
+
 #f {
-    clear:both;
+    clear: both;
     background-color: brown;
     text-align: center;
-    color: aliceblue; 
-    }
-#matn {
-    
-    color: aliceblue; 
+    padding: 10px;
 }
+
 .bosh {
     border: 2px solid rgb(23, 236, 23);
     color: aliceblue; 
     font-size: 23px;
-}
-body{
-    background-image: url('../rasmlar/efon.jpg');
-    
-}
-.asos {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
- .bos{
+.bosh:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: yellow;
+}
+
+.bos {
     background-color: rgba(0, 0, 255, 0.5);
-    /* border: 2px solid rgb(0, 174, 255); */
     width: 200px;
-    height: 100px;}
+    height: 100px;
+    border: none;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-@media screen and (max-width: 420px) {
-    body {
-        width: auto;
-        height: auto;
-        font-size: 8px;
+.bos:hover {
+    background-color: rgba(0, 0, 255, 0.7);
+    transform: scale(1.05);
+}
+
+#openPdfButton {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menu, #news {
+        float: none;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
     }
-    #menu {
-        width: 10%;
-        height: 4%;
-        border: none;   
-    }
-    #logo {
-        display: none;
-    }
-    #menu .bos {
-        width: 10%;
-        height: 4%;
-        font-size: 8px;
-        border: none;
-    }
-    .bosh {
-        font-size: 8px;
-        border: none;
-    }
+
     #content {
-        width: 50%;
-        height: 10%;
-        font-size: 8px;
-        float: right;
-        padding: 20px;  
-        padding-right: 10%;
-        padding-left: 10%;
-        margin: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
-    h1 {
-        font-size: 8px;
+
+    #logo {
+        font-size: 50px;
+        height: auto;
     }
-    p {
-        font-size: 8px;
+
+    .bos {
+        width: 100%;
+        height: auto;
     }
+    
     #news {
-        width: auto;
-        height: auto;
-        padding-left: 10%;
+        float: none;
+        width: 100%;
+        margin: 0;
     }
-    #f {
-        width: auto;
-        height: auto;
-        padding-left: 10%;
-    }
-    audio {
-        width: 100px;
-        height: 20px;
+    
+    #openPdfButton {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 10%;
-    }
-    input{
-        width: 70%;
-        height: 20px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
 }
+
