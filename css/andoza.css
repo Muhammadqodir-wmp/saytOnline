@@ -1,6 +1,6 @@
 @keyframes birinchi {
-    from {border: 3px solid rgb(255, 0, 0);}
-    to {border: 1.5px solid greenyellow;}
+    from { border: 3px solid rgb(255, 0, 0); }
+    to { border: 1.5px solid greenyellow; }
 }
 
 body {
@@ -32,6 +32,7 @@ body {
 
 #menu {
     float: left;
+
 }
 
 #news {
@@ -48,6 +49,9 @@ body {
     float: left;
     margin-bottom: 20px;
 }
+.asos ~ h1{
+    text-align: center;
+}
 
 #f {
     clear: both;
@@ -61,18 +65,18 @@ body {
     color: aliceblue; 
     font-size: 23px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(23, 236, 23, 0.3));
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 .bosh:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(23, 236, 23, 0.5));
     color: yellow;
 }
 
 .bos {
-    background-color: rgba(0, 0, 255, 0.5);
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.5), rgba(0, 255, 255, 0.5));
     width: 200px;
     height: 100px;
     border: none;
@@ -80,11 +84,11 @@ body {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .bos:hover {
-    background-color: rgba(0, 0, 255, 0.7);
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.7), rgba(0, 255, 255, 0.7));
     transform: scale(1.05);
 }
 
@@ -127,4 +131,3 @@ body {
         margin: 0 auto;
     }
 }
-
